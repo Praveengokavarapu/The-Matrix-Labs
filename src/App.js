@@ -212,7 +212,7 @@ class App extends Component{
             <h1 className="name">Nftify</h1>
           </div>
             {tabsList.map(each=>(
-                <a><Tabs onClickTab={this.onClickTab} id={each.tabId} isActive={each.tabId===activeTabId} key={each.tabId}/></a>
+                <Tabs onClickTab={this.onClickTab} id={each.tabId} isActive={each.tabId===activeTabId} key={each.tabId}/>
             ))}
           </nav>
         
